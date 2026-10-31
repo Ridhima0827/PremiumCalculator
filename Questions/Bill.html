@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    var category = "domestic";
+    var units = 100;
+
+    var bill = 0;
+
+    switch (category) {
+        case "domestic":
+            bill = units * 5;
+            break;
+
+        case "commercial":
+            bill = units * 8;
+            break;
+
+        case "industrial":
+            bill = units * 10;
+            break;
+
+        default:
+            console.log("Invalid category");
+    }
+
+    console.log(bill);
+</script>
+
+</html>

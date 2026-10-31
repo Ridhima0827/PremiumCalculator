@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    var n1 = 100;
+    var n2 = 999;
+
+    for (var i = n1; i < n2; i++) {
+        var sum = 0;
+        var num = i;
+        var original = num;
+        while (num != 0) {
+            var digit = num % 10;
+            var power = Math.pow(digit, 3);
+            sum += power;
+            num = Math.floor(num / 10);
+        }
+        if (sum == original) {
+            console.log(original);
+        }
+    }
+</script>
+
+</html>
